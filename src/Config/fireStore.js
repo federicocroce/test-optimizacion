@@ -14,7 +14,11 @@ import actionsLoading from '../Actions/actionsLoading'
 // const auth = require("firebase/auth");
 
 const firebase = require("firebase");
+// Required for side-effects
 require("firebase/firestore");
+
+
+
 // Required for side-effects
 // const db = require("firebase/firestore");
 
@@ -37,16 +41,16 @@ const fireStoreApp = {};
 // };
 
 
-// var config = {
-//   apiKey: "AIzaSyDINSbmIwTdqRE7yDhkow46fs3JxW5y8KM",
-//   authDomain: "test-74eeb.firebaseapp.com",
-//   databaseURL: "https://test-74eeb.firebaseio.com",
-//   projectId: "test-74eeb",
-//   storageBucket: "test-74eeb.appspot.com",
-//   messagingSenderId: "984496005171"
-// };
+var config = {
+  apiKey: "AIzaSyDINSbmIwTdqRE7yDhkow46fs3JxW5y8KM",
+  authDomain: "test-74eeb.firebaseapp.com",
+  databaseURL: "https://test-74eeb.firebaseio.com",
+  projectId: "test-74eeb",
+  storageBucket: "test-74eeb.appspot.com",
+  messagingSenderId: "984496005171"
+};
 
-// firebase.initializeApp(config);
+firebase.initializeApp(config);
 
 var db = firebase.firestore();
 
