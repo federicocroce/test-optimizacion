@@ -1,6 +1,6 @@
 
 import React from 'react';
-// import * as firebase from 'firebase';
+import * as firebase from 'firebase';
 // import firebase from 'firebase';
 
 import actionsLogin from '../Actions/actionsLogin'
@@ -13,12 +13,8 @@ import actionsLoading from '../Actions/actionsLoading'
 // const db = require("firebase/database")
 // const auth = require("firebase/auth");
 
-const firebase = require("firebase");
-// Required for side-effects
+// const firebase = require("firebase");
 require("firebase/firestore");
-
-
-
 // Required for side-effects
 // const db = require("firebase/firestore");
 
