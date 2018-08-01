@@ -1,6 +1,6 @@
 
 import React from 'react';
-import * as firebase from 'firebase';
+   import * as firebase from 'firebase';
 // import firebase from 'firebase';
 
 import actionsLogin from '../Actions/actionsLogin'
@@ -14,7 +14,7 @@ import actionsLoading from '../Actions/actionsLoading'
 // const auth = require("firebase/auth");
 
 // const firebase = require("firebase");
-require("firebase/firestore");
+
 // Required for side-effects
 // const db = require("firebase/firestore");
 
@@ -37,6 +37,8 @@ const fireStoreApp = {};
 // };
 
 
+require("firebase/firestore");
+
 var config = {
   apiKey: "AIzaSyDINSbmIwTdqRE7yDhkow46fs3JxW5y8KM",
   authDomain: "test-74eeb.firebaseapp.com",
@@ -55,7 +57,7 @@ var db = firebase.firestore();
 
 
 
-// const storage = firebase.storage();
+const storage = firebase.storage();
 
 
 
