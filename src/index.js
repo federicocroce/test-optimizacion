@@ -12,6 +12,8 @@ import './Assets/icons/style.css';
 
 import registerServiceWorker from './registerServiceWorker';
 
+import {setFrameworkConfig} from './Config/frameworkConfig';
+
 // frameworkConfig();
 // ReactDOM.render(<components.Index />, document.getElementById('root'));
 // registerServiceWorker();
@@ -35,7 +37,7 @@ import App from './App'
 
 
 
-// setFrameworkConfig();
+setFrameworkConfig();
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 registerServiceWorker();

@@ -10,12 +10,14 @@
 // import Toast from "./Utilities/Toast";
 
 
-import asyncComponent from './Components/asyncComponent'
+import asyncComponent from './asyncComponent'
 
-export default setComponents = () => {
+ const setComponents = () => {
+    console.log("setComponents");
     asyncComponent('./Utilities/Toast', 'Toast');
 }
 
+export default setComponents;
 
 
 
