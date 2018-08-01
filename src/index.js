@@ -16,8 +16,8 @@ import registerServiceWorker from './registerServiceWorker';
 // ReactDOM.render(<components.Index />, document.getElementById('root'));
 // registerServiceWorker();
 
-// import App from './App'
-import Index from './Components/Sections/Index'
+import App from './App'
+// import Index from './Components/Sections/Index'
 
 
 // const firebase = require("firebase/app");
@@ -37,5 +37,5 @@ import Index from './Components/Sections/Index'
 
 // setFrameworkConfig();
 
-ReactDOM.render(<Index/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 registerServiceWorker();

@@ -7,7 +7,15 @@
 // import Footer from "./Generic/Footer";
 // import Header from "./Generic/Header";
 
-import Toast from "./Utilities/Toast";
+// import Toast from "./Utilities/Toast";
+
+
+import asyncComponent from './Components/asyncComponent'
+
+export default setComponents = () => {
+    asyncComponent('./Utilities/Toast', 'Toast');
+}
+
 
 
 
@@ -18,17 +26,17 @@ import Toast from "./Utilities/Toast";
 // import Spinner from "./Utilities/Spinner";
 
 
-export  {    
-    // MinCV,
-    // Index,
-    // ContentCard,
-    Toast,
-    // Spinner,
-    // MainRightSection,
-    // AsidePersonalData,
-    // Footer,
-    // Header
-}
+// export {
+//     // MinCV,
+//     // Index,
+//     // ContentCard,
+//     Toast,
+//     // Spinner,
+//     // MainRightSection,
+//     // AsidePersonalData,
+//     // Footer,
+//     // Header
+// }
 
 // const components =  {    
 //     MinCV,
