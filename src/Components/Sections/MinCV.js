@@ -1,30 +1,11 @@
-import React  from 'react';
-
-// const components = {}; actions = {}
-
-import Toast from '../Utilities/Toast'
-import Spinner from '../Utilities/Spinner'
-
-import Header from '../Generic/Header'
-import AsidePersonalData from '../Generic/AsidePersonalData'
-import MainRightSection from '../Generic/MainRightSection'
-import Footer from '../Generic/Footer'
-
-
-import actionsEstudies from '../../Actions/actionsEstudies'
-import actionsExperiences from '../../Actions/actionsExperiences'
-import actionsOwnProjects from '../../Actions/actionsOwnProjects'
-import actionsPersonalData from '../../Actions/actionsPersonalData'
-import actionsFooter from '../../Actions/actionsFooter'
-import actionsLogin from '../../Actions/actionsLogin'
-import actionsToast from '../../Actions/actionsToast'
-
-
+import React, { actions, components } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import Parser from 'html-react-parser';
 import classNames from 'classnames';
 
+
+const headerProps = {};
 
 class MinCV extends React.Component {
 
@@ -54,7 +35,7 @@ class MinCV extends React.Component {
 
         const props = this.props;
 
-        const headerProps = {};
+        
 
         headerProps.toogleAuth = () => {
             if (props.login.loginState) {
@@ -111,18 +92,18 @@ class MinCV extends React.Component {
 
             <div className={mainClass}>
 
-                <Toast messages={props.messages.list} />
+                <components.Toast messages={props.messages.list} />
 
-                {props.loading.isLoading ? <Spinner /> : null}
+                {props.loading.isLoading ? <components.Spinner /> : null}
 
-                <Header headerProps={headerProps} state={this.state} />
+                <components.Header headerProps={headerProps} state={this.state} />
 
                 <main className="table">
-                    <AsidePersonalData personalData={personalData} />
-                    <MainRightSection content={content} />
+                    <components.AsidePersonalData personalData={personalData} />
+                    <components.MainRightSection content={content} />
                 </main>
 
-                <Footer footer={footer} />
+                <components.Footer footer={footer} />
             </div>
         );
     }
@@ -141,53 +122,52 @@ const mapStateToProps = (state) => {
     };
 }
 
-
 const mapDispatchToProps = dispatch => {
     return {
         fetchEstudies() {
-            actionsEstudies.fetchObjects(dispatch)
+            actions.actionsEstudies.fetchObjects(dispatch)
         },
         fetchExperiences() {
-            actionsExperiences.fetchObjects(dispatch)
+            actions.actionsExperiences.fetchObjects(dispatch)
         },
         fetchOwnProjects() {
-            actionsOwnProjects.fetchObjects(dispatch)
+            actions.actionsOwnProjects.fetchObjects(dispatch)
         },
         createExperiences() {
-            actionsExperiences.createAutoID(dispatch)
+            actions.actionsExperiences.createAutoID(dispatch)
         },
         removeExperiences(id) {
-            actionsExperiences.removeItem(dispatch, id)
+            actions.actionsExperiences.removeItem(dispatch, id)
         },
         createOwnProjects() {
-            actionsOwnProjects.createAutoID(dispatch)
+            actions.actionsOwnProjects.createAutoID(dispatch)
         },
         removeOwnProjects(id) {
-            actionsOwnProjects.removeItem(dispatch, id)
+            actions.actionsOwnProjects.removeItem(dispatch, id)
         },
         fetchPersonalData() {
-            actionsPersonalData.fetchObjects(dispatch)
+            actions.actionsPersonalData.fetchObjects(dispatch)
         },
         createEstudies() {
-            actionsEstudies.createAutoID(dispatch)
+            actions.actionsEstudies.createAutoID(dispatch)
         },
         removeEstudies(id) {
-            actionsEstudies.removeItem(dispatch, id)
+            actions.actionsEstudies.removeItem(dispatch, id)
         },
         fetchFooter() {
-            actionsFooter.fetchObjects(dispatch)
+            actions.actionsFooter.fetchObjects(dispatch)
         },
         hadleAuth() {
-            actionsLogin.hadleAuth(dispatch)
+            actions.actionsLogin.hadleAuth(dispatch)
         },
         onAuthStateChanged() {
-            actionsLogin.onAuthStateChanged(dispatch)
+            actions.actionsLogin.onAuthStateChanged(dispatch)
         },
         signOut() {
-            actionsLogin.signOut(dispatch)
+            actions.actionsLogin.signOut(dispatch)
         },
         setToast(text) {
-            actionsToast.setToast(dispatch, text)
+            actions.actionsToast.setToast(dispatch, text)
         }
     };
 }

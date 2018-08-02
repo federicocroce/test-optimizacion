@@ -1,12 +1,10 @@
-import React, { Component, components } from 'react';
-// import React, { Component } from 'react';
+// import React, { Component, components } from 'react';
+import React, { Component } from 'react';
 
-// import asyncComponent from './Components/asyncComponent'
+// import './Styles/Main/index.css';
+// import './Assets/icons/style.css';
 
-import './Styles/Main/index.css';
-import './Assets/icons/style.css';
-
-// import {setframeworkIndexConfig, setFrameworkConfig} from './Config/frameworkConfig';
+import {setFrameworkConfig} from './Config/frameworkConfig';
 // import {setFrameworkConfig} from './Config/frameworkConfig';
 // import {setframeworkIndexConfig} from './Config/frameworkConfig';
 // frameworkConfig();
@@ -23,16 +21,13 @@ import './Assets/icons/style.css';
 
 
 // import Toast from "./Components/Utilities/Toast";
-
-// import {Toast} from "./Components/indexComponents";
-
 // import Spinner from "./Components/Utilities/Spinner";
 
 
 class App extends Component {
 
   componentWillMount(){
-    // setFrameworkConfig();
+    setFrameworkConfig();
     // setframeworkIndexConfig();
   }
 
@@ -41,21 +36,21 @@ class App extends Component {
 
     const testToast = [
       {
-        text: 'Fede mf'
+        text: 'Fede'
       }
     ]
     return (
       <div className="App">
         <header className="App-header">
 
-          {/*<Toast messages={testToast} />*/}
-           <components.Toast messages={testToast} /> 
+          {/* <Toast messages={testToast} /> */}
+           {/* <components.Toast messages={testToast} />  */}
 
-           {/*<img src={logo} className="App-logo" alt="logo" /> */}
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> con firebase
+          To get started, edit <code>src/App.js</code> con el frame sin config
         </p>
       </div>
     );

@@ -8,6 +8,9 @@ import actionsLogin from "./actionsLogin";
 import actionsToast from "./actionsToast";
 import actionsLoading from "./actionsLoading";
 
+
+// import('./actionsEstudies').then(module => React.actions = module.default);
+
 const actions = {    
     actionsEstudies,
     actionsExperiences,

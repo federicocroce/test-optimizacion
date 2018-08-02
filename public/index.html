@@ -5,19 +5,13 @@
   <link rel="canonical" href="https://federicocrocecv.firebaseapp.com/index.html">
   <link rel="manifest" href="/manifest.json">
 
-  <link async rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
 
   <meta charset="utf-8" />
 
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-<!-- 
-   <script async src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-  <script async src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
-  <script async src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
-  <script async src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
-  <script async src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script> -->
- 
+  
   
   <!-- <link rel="manifest" href="./manifest.json"> -->
   <!-- <link href="./src/registerServiceWorker.json"> -->
@@ -30,22 +24,37 @@
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 
-  <!-- <style amp-custom>
+  <style amp-custom>
     @font-face {
       font-family: "Montserrat";
       src: url("https://fonts.googleapis.com/css?family=Montserrat");
     }
-  </style> -->
+
+    body{
+      /* position: relative; */
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+    }
+
+    .first-paint{
+      color: red;
+      position: absolute;
+    }
+  </style>
   
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-
-  <!-- <script async src="../src/Config/firestoreInit.js"></script> -->
 
   <script async custom-element="amp-install-serviceworker"
   src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 
   <!-- <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script> -->
+
+  <!-- <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+
+  <amp-script layout=responsive>
+    console.log('Fede');
+  </amp-script> -->
 
   <!-- <script async src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCz6YGq-xBSjtIBWR3keBoLj45-rdXDFiI"></script> -->
 
@@ -81,11 +90,18 @@
  
 <!-- firebase.initializeApp(config); -->
 
+
+
 </head>
 
 <body>
-  <!-- <h1>Prueba</h1> -->
+  <h1 id="first-paint" class="first-paint">CV Federico Croce</h1>
   <div id="root"></div>
+  <script async>
+    window.onload = function() {
+      document.getElementById("first-paint").style.display = 'none';
+    }    
+  </script>
 </body>
 
 </html>

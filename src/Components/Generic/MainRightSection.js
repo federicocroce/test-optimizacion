@@ -1,7 +1,5 @@
 import React, { components } from 'react';
 
-import ContentCard from './ContentCard'
-
 const MainRightSection = props => {
 
     return (
@@ -17,7 +15,7 @@ const MainRightSection = props => {
 
                             <div className="container-detail">
                                 <h2>{data.generic.title}</h2>
-                                {data.list.map((item, index) => { return <article key={index}><ContentCard item={item} removeItem={data.removeItem} /></article> })}
+                                {data.list.map((item, index) => { return <article key={index}><components.ContentCard item={item} removeItem={data.removeItem} /></article> })}
                             </div>
                         </section>
                         : null

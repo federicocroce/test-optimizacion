@@ -1,10 +1,9 @@
-import React from 'react';
-import fireStoreApp from '../Config/fireStore';
+import {config} from 'react';
 
 const collection = 'personalData';
 
 const actions = {};
 
-actions.fetchObjects = dispatch => fireStoreApp.fetchObjects(collection, dispatch, 'FETCH_PERSONAL_DATA');
+actions.fetchObjects = dispatch => config.fireStoreApp.fetchObjects(collection, dispatch, 'FETCH_PERSONAL_DATA');
 
 export default actions;

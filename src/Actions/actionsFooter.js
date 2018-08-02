@@ -1,13 +1,9 @@
-import React from 'react';
-
-import fireStoreApp from '../Config/fireStore';
+import {config} from 'react';
 
 const collection = 'footer';
 
-
-
 const actions = {};
 
-actions.fetchObjects = dispatch => fireStoreApp.fetchObjects(collection, dispatch, 'FETCH_FOOTER');
+actions.fetchObjects = dispatch => config.fireStoreApp.fetchObjects(collection, dispatch, 'FETCH_FOOTER');
 
 export default actions;

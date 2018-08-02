@@ -1,43 +1,52 @@
-import React from 'react';
-// import {components} from 'react';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+
+
+// import App from './App'
+
+
+// import './Styles/Main/index.css';
+// import './Assets/icons/style.css';
+
+// // import {setFrameworkConfig, setframeworkIndexConfig} from './Config/frameworkConfig';
+
+// import('./registerServiceWorker').then(module => module.default());
+
+
+// ReactDOM.render(<App/>, document.getElementById('root'));
+
+
+
+
+
+
+
+
+
+
+import React, {components} from 'react';
 import ReactDOM from 'react-dom';
 
 
 import './Styles/Main/index.css';
 import './Assets/icons/style.css';
 
+// import {setFrameworkConfig, setframeworkIndexConfig} from './Config/frameworkConfig';
 
-// import {setFrameworkConfig} from './Config/frameworkConfig';
+import Index from './Components/Sections/Index';
 
+// setFrameworkConfig();
+// setframeworkIndexConfig();
 
-import registerServiceWorker from './registerServiceWorker';
+import('./registerServiceWorker').then(module => module.default());
 
-import {setFrameworkConfig} from './Config/frameworkConfig';
-
-// frameworkConfig();
-// ReactDOM.render(<components.Index />, document.getElementById('root'));
+ReactDOM.render(<Index />, document.getElementById('root'));
 // registerServiceWorker();
 
-import App from './App'
-// import Index from './Components/Sections/Index'
 
+// import App from './App'
 
-// const firebase = require("firebase/app");
+// setFrameworkConfig();
 
-// var config = {
-//     apiKey: "AIzaSyDINSbmIwTdqRE7yDhkow46fs3JxW5y8KM",
-//     authDomain: "test-74eeb.firebaseapp.com",
-//     databaseURL: "https://test-74eeb.firebaseio.com",
-//     projectId: "test-74eeb",
-//     storageBucket: "test-74eeb.appspot.com",
-//     messagingSenderId: "984496005171"
-//   };
-  
-//   firebase.initializeApp(config);
-
-
-
-setFrameworkConfig();
-
-ReactDOM.render(<App/>, document.getElementById('root'));
-registerServiceWorker();
+// ReactDOM.render(<App/>, document.getElementById('root'));
+// registerServiceWorker();

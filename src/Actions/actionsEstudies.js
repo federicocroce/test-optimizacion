@@ -1,6 +1,4 @@
-import React from 'react';
-
-import fireStoreApp from '../Config/fireStore';
+import {config} from 'react';
 
 const collection = 'estudies';
 
@@ -22,8 +20,8 @@ const document = {
     }
 }
 
-actions.fetchObjects = dispatch => fireStoreApp.fetchObjects(collection, dispatch, 'FETCH_ESTUDIES');
-actions.createAutoID = dispatch => fireStoreApp.createAutoID(dispatch, collection, document);
-actions.removeItem = (dispatch, id) => fireStoreApp.removeItem(dispatch, collection, id);
+actions.fetchObjects = dispatch => config.fireStoreApp.fetchObjects(collection, dispatch, 'FETCH_ESTUDIES');
+actions.createAutoID = dispatch => config.fireStoreApp.createAutoID(dispatch, collection, document);
+actions.removeItem = (dispatch, id) => config.fireStoreApp.removeItem(dispatch, collection, id);
 
 export default actions;

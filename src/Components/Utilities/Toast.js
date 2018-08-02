@@ -16,6 +16,4 @@ const Toast = props => {
     );
 }
 
-// React.components.Toast = Toast;
-
 export default Toast;
