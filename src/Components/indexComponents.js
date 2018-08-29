@@ -1,20 +1,39 @@
 import asyncComponent from './asyncComponent'
 
+
 const setComponents = () => {
     asyncComponent('./Sections/Index', 'Index');
     asyncComponent('./Sections/MinCV', 'MinCV');
+
 
     asyncComponent('./Generic/ContentCard', 'ContentCard');
     asyncComponent('./Generic/MainRightSection', 'MainRightSection');
     asyncComponent('./Generic/AsidePersonalData', 'AsidePersonalData');
     asyncComponent('./Generic/Footer', 'Footer');
     asyncComponent('./Generic/Header', 'Header');
+    asyncComponent('./Generic/Test', 'Test');
 
     asyncComponent('./Utilities/Spinner', 'Spinner');
     asyncComponent('./Utilities/Toast', 'Toast');
 }
 
 export default setComponents;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

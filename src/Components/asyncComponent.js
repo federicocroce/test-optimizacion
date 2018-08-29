@@ -10,7 +10,8 @@ const asyncComponent = (path, name) => {
 
 
         async componentDidMount() {
-            import(`${path}`).then(module => this.setState({ component: module.default }));
+            console.log('Importa asyncComponent '+ name);
+            await import(`${path}` /* webpackChunkName: "[request]"*/).then(module => this.setState({ component: module.default }));
         }
 
         render() {

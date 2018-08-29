@@ -35,14 +35,14 @@ import './Assets/icons/style.css';
 
 import {setFrameworkConfig, setframeworkIndexConfig} from './Config/frameworkConfig';
 
-import Index from './Components/Sections/Index';
+// import Index from './Components/Sections/Index';
 
 setFrameworkConfig();
 setframeworkIndexConfig();
 
 import('./registerServiceWorker').then(module => module.default());
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 
 
