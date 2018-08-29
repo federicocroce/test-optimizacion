@@ -3,7 +3,7 @@ import { routerMiddleware } from "react-router-redux";
 import createHistory from 'history/createBrowserHistory';
 import { composeWithDevTools } from 'redux-devtools-extension';
 // import logger from 'redux-logger';
-// import thunk from 'redux-thunk'
+import thunk from 'redux-thunk'
 
 import reducer from "../Reducers/indexReducer";
 
@@ -17,6 +17,7 @@ storeHistory.store = createStore(
     composeWithDevTools(
         applyMiddleware(
             // logger,
+            thunk,
             middleware            
         )
     )

@@ -48,6 +48,13 @@
   <script async custom-element="amp-install-serviceworker"
   src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 
+  <!-- Firebase App is always required and must be first -->
+<script  src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+<!-- Add additional services you want to use -->
+<script  src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+
+
   <!-- <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script> -->
 
   <!-- <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
@@ -95,13 +102,13 @@
 </head>
 
 <body>
-  <h1 id="first-paint" class="first-paint">CV Federico Croce</h1>
+  <!-- <h1 id="first-paint" class="first-paint">CV Federico Croce</h1> -->
   <div id="root"></div>
-  <script async>
+  <!-- <script async>
     window.onload = function() {
       document.getElementById("first-paint").style.display = 'none';
     }    
-  </script>
+  </script> -->
 </body>
 
 </html>

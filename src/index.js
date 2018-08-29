@@ -28,15 +28,17 @@ import React, {components} from 'react';
 import ReactDOM from 'react-dom';
 
 
+import App from './App'
+
 import './Styles/Main/index.css';
 import './Assets/icons/style.css';
 
-// import {setFrameworkConfig, setframeworkIndexConfig} from './Config/frameworkConfig';
+import {setFrameworkConfig, setframeworkIndexConfig} from './Config/frameworkConfig';
 
 import Index from './Components/Sections/Index';
 
-// setFrameworkConfig();
-// setframeworkIndexConfig();
+setFrameworkConfig();
+setframeworkIndexConfig();
 
 import('./registerServiceWorker').then(module => module.default());
 

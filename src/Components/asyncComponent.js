@@ -9,7 +9,7 @@ const asyncComponent = (path, name) => {
         }
 
 
-        componentDidMount() {
+        async componentDidMount() {
             import(`${path}`).then(module => this.setState({ component: module.default }));
         }
 

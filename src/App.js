@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 // import './Styles/Main/index.css';
 // import './Assets/icons/style.css';
 
-import {setFrameworkConfig} from './Config/frameworkConfig';
+// import {setFrameworkConfig} from './Config/frameworkConfig';
 // import {setFrameworkConfig} from './Config/frameworkConfig';
 // import {setframeworkIndexConfig} from './Config/frameworkConfig';
 // frameworkConfig();
@@ -27,7 +27,7 @@ import {setFrameworkConfig} from './Config/frameworkConfig';
 class App extends Component {
 
   componentWillMount(){
-    setFrameworkConfig();
+    // setFrameworkConfig();
     // setframeworkIndexConfig();
   }
 
