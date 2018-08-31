@@ -1,4 +1,4 @@
-import {config} from 'react';
+// import {config} from 'react';
 
 const collection = 'ownProjects';
 
@@ -19,8 +19,8 @@ const document = {
     }
 }
 
-actions.fetchObjects = dispatch => config.fireStoreApp.fetchObjects(collection, dispatch, 'FETCH_OWN_PROJECTS');
-actions.createAutoID = dispatch => config.fireStoreApp.createAutoID(dispatch, collection, document);
-actions.removeItem = (dispatch, id) => config.fireStoreApp.removeItem(dispatch, collection, id);
+// actions.fetchObjects = dispatch => config.fireStoreApp.fetchObjects(collection, dispatch, 'FETCH_OWN_PROJECTS');
+// actions.createAutoID = dispatch => config.fireStoreApp.createAutoID(dispatch, collection, document);
+// actions.removeItem = (dispatch, id) => config.fireStoreApp.removeItem(dispatch, collection, id);
 
 export default actions;

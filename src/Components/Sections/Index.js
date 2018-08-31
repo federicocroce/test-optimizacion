@@ -1,4 +1,4 @@
-import React, { Component, components, config } from 'react';
+import React, { Component, components } from 'react';
 // import React, { Component, config } from 'react';
 import { Provider } from "react-redux";
 import { ConnectedRouter } from "react-router-redux";
@@ -24,17 +24,18 @@ class Index extends Component {
     //   }
     // ]
     return (
-      <Provider store={config.storeHistory.store}>
-        <ConnectedRouter history={config.storeHistory.history}>
-          {/* <MinCV /> */}
-          <div>
-            {/* <h1>ALGO</h1> */}
-            <components.MinCV />
-          </div>
+      <div></div>
+      // <Provider store={config.storeHistory.store}>
+      //   <ConnectedRouter history={config.storeHistory.history}>
+      //     {/* <MinCV /> */}
+      //     <div>
+      //       {/* <h1>ALGO</h1> */}
+      //       <components.MinCV />
+      //     </div>
 
-          {/* <h1>Fede</h1> */}
-        </ConnectedRouter>
-      </Provider>
+      //     {/* <h1>Fede</h1> */}
+      //   </ConnectedRouter>
+      // </Provider>
     );
   }
 }

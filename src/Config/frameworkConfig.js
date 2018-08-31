@@ -2,11 +2,12 @@ import React from 'react';
 
 import actions from "../Actions/indexActions";
 import setComponents from "../Components/indexComponents";
-// import config from "./indexConfig";
+import config from "./indexConfig";
 import functions from "./indexFunctions";
 
 Object.assign(React, {
     functions: functions,
+    config: config,
     components: {},
     actions: actions
 });
@@ -26,6 +27,7 @@ const setFrameworkConfig = () => {
 
 const setframeworkIndexConfig = () => {
     Object.assign(React, {
+        // config: {}
         // config: config
     });
 }

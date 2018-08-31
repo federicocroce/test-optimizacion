@@ -24,7 +24,7 @@
 
 
 
-import React, {components} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
 
@@ -38,7 +38,7 @@ import {setFrameworkConfig, setframeworkIndexConfig} from './Config/frameworkCon
 // import Index from './Components/Sections/Index';
 
 setFrameworkConfig();
-setframeworkIndexConfig();
+// setframeworkIndexConfig();
 
 import('./registerServiceWorker').then(module => module.default());
 
